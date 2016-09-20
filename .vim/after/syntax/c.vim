@@ -20,6 +20,12 @@ syn keyword	cInclude	WARN
 syn keyword	cInclude	WARN_ON
 syn keyword	cInclude	WARN_ON_ONCE
 syn keyword	cInclude	BUILD_BUG_ON
+syn keyword	cInclude	DSNVM_BUG
+syn keyword	cInclude	DSNVM_BUG_ON
+syn keyword	cInclude	DSNVM_WARN
+syn keyword	cInclude	DSNVM_WARN_ON
+syn keyword	cInclude	DSNVM_WARN_ON_ONCE
+syn keyword	cInclude	DSNVM_BUG_ON_PAGE
 
 syn keyword	cInclude	READ_ONCE
 syn keyword	cInclude	WRITE_ONCE
