@@ -7,6 +7,12 @@
 	(gdb) list *(foo+0x333)
 	(gdb) list *(bar+0x222)
 
+
 # Tmux:
 	setw -g mode-keys vi
 	setw synchronize-panes
+
+
+# Grubby
+	grubby --set-default="/boot/vmlinuz-2.6.10"
+	grubby --default-kernel
