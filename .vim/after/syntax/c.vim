@@ -11,34 +11,26 @@
 "	Of course, feel free to choose your own favorite color schemes.
 "
 
-syn keyword	cInclude	likely
-syn keyword	cInclude	unlikely
-
+"
+" Make them red because of their importance
+"
 syn keyword	cInclude	BUG
 syn keyword	cInclude	BUG_ON
 syn keyword	cInclude	WARN
 syn keyword	cInclude	WARN_ON
 syn keyword	cInclude	WARN_ON_ONCE
 syn keyword	cInclude	BUILD_BUG_ON
-syn keyword	cInclude	DSNVM_BUG
-syn keyword	cInclude	DSNVM_BUG_ON
-syn keyword	cInclude	DSNVM_WARN
-syn keyword	cInclude	DSNVM_WARN_ON
-syn keyword	cInclude	DSNVM_WARN_ON_ONCE
-syn keyword	cInclude	DSNVM_BUG_ON_PAGE
 
 syn keyword	cInclude	READ_ONCE
 syn keyword	cInclude	WRITE_ONCE
 syn keyword	cInclude	ACCESS_ONCE
 
-syn keyword	cLabel		__section
-syn keyword	cLabel		__init
-syn keyword	cLabel		__initdata
-syn keyword	cLabel		__read_mostly
-syn keyword	cLabel		__cacheline_aligned
-syn keyword	cLabel		__init_task_data
-syn keyword	cLabel		__lockfunc
+syn keyword	cInclude	likely
+syn keyword	cInclude	unlikely
 
+"
+" Evil typedef
+"
 syn keyword	cType		__u8	__s8
 syn keyword	cType		__u16	__s16
 syn keyword	cType		__u32	__s32
@@ -53,9 +45,22 @@ syn keyword	cType		__be64	__le64
 syn keyword	cType		atomic_t
 syn keyword	cType		cpumask_t
 syn keyword	cType		spinlock_t
+syn keyword	cType		mutex_t
 
+"
+" Compiler Labels
+"
 syn keyword	cLabel		asmlinkage
 syn keyword	cLabel		dotraplinkage
+
+syn keyword	cLabel		__section
+syn keyword	cLabel		__init
+syn keyword	cLabel		__initdata
+syn keyword	cLabel		__read_mostly
+syn keyword	cLabel		__cacheline_aligned
+syn keyword	cLabel		__init_task_data
+syn keyword	cLabel		__lockfunc
+syn keyword	cLabel		__sched
 
 syn keyword	cLabel		__weak
 syn keyword	cLabel		__pure
@@ -96,14 +101,31 @@ syn keyword	cLabel		__pmem
 syn keyword	cLabel		__rcu
 syn keyword	cLabel		__pmem
 
-syn keyword	cType		LIST_HEAD
-syn keyword	cType		DEFINE_MUTEX
-syn keyword	cType		DEFINE_BITMAP
-syn keyword	cType		DECLARE_BITMAP
-syn keyword	cType		EXPORT_SYMBOL
+"
+" Data Structures
+"
+syn keyword	cLabel		LIST_HEAD
+syn keyword	cLabel		DEFINE_MUTEX
+syn keyword	cLabel		DEFINE_BITMAP
+syn keyword	cLabel		DECLARE_BITMAP
+syn keyword	cLabel		EXPORT_SYMBOL
+syn keyword	cLabel		DEFINE_SPINLOCK
+syn keyword	cLabel		DEFINE_PER_CPU_SHARED_ALIGNED
+syn keyword	cLabel		DEFINE_PER_CPU_ALIGNED
+syn keyword	cLabel		DEFINE_PER_CPU_PAGE_ALIGNED
+syn keyword	cLabel		DEFINE_PER_CPU_FIRST
+syn keyword	cLabel		DEFINE_PER_CPU_READ_MOSTLY
+syn keyword	cLabel		DEFINE_PER_CPU
 
-syn keyword	cError		__MUST_TODO__
+"
+" Loops
+"
+syn keyword	cLabel		for_each_possible_cpu
+syn keyword	cLabel		for_each_online_cpu
 
+"
+" Signal Constants
+"
 syn keyword	cConstant	SIGBUS
 syn keyword	cConstant	SIGSTKFLT
 syn keyword	cConstant	SIGURG
