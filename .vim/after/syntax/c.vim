@@ -116,6 +116,11 @@ syn keyword	cLabel		DEFINE_PER_CPU_PAGE_ALIGNED
 syn keyword	cLabel		DEFINE_PER_CPU_FIRST
 syn keyword	cLabel		DEFINE_PER_CPU_READ_MOSTLY
 syn keyword	cLabel		DEFINE_PER_CPU
+syn keyword	cLabel		DEFINE_WAITQUEUE
+syn keyword	cLabel		DECLARE_WAITQUEUE
+syn keyword	cLabel		DEFINE_COMPLETION
+syn keyword	cLabel		DECLARE_COMPLETION
+syn keyword	cLabel		DEFINE_TIMER
 
 "
 " Loops
