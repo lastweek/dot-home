@@ -28,7 +28,7 @@ syn keyword	cInclude	ACCESS_ONCE
 syn keyword	cInclude	likely
 syn keyword	cInclude	unlikely
 
-syn keyword	cType		SYSCALL_DEFINE
+syn keyword	cType		SYSCALL_DEFINE0
 syn keyword	cType		SYSCALL_DEFINE1
 syn keyword	cType		SYSCALL_DEFINE2
 syn keyword	cType		SYSCALL_DEFINE3
@@ -36,6 +36,7 @@ syn keyword	cType		SYSCALL_DEFINE4
 syn keyword	cType		SYSCALL_DEFINE5
 syn keyword	cType		SYSCALL_DEFINE6
 syn keyword	cType		SYSCALL_DEFINE7
+syn keyword	cType		SYSCALL_DEFINE8
 
 "
 " Evil typedef
