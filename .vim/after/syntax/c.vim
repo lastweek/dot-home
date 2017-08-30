@@ -127,6 +127,10 @@ syn keyword	cLabel		DEFINE_TIMER
 "
 syn keyword	cLabel		for_each_possible_cpu
 syn keyword	cLabel		for_each_online_cpu
+syn keyword	cLabel		for_each_set_bit
+syn keyword	cLabel		for_each_clear_bit
+syn keyword	cLabel		list_for_each
+syn keyword	cLabel		list_for_each_entry
 
 "
 " Signal Constants
@@ -137,4 +141,5 @@ syn keyword	cConstant	SIGURG
 syn keyword	cConstant	SIGXCPU
 syn keyword	cConstant	SIGXFSZ
 syn keyword	cConstant	SIGVTALRM
+syn keyword	cConstant	SIGPROF
 syn keyword	cConstant	SIGPROF
