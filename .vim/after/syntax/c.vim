@@ -141,6 +141,8 @@ syn keyword	cLabel		for_each_set_bit
 syn keyword	cLabel		for_each_clear_bit
 syn keyword	cLabel		list_for_each
 syn keyword	cLabel		list_for_each_entry
+syn keyword	cLabel		for_each_thread
+syn keyword	cLabel		while_each_thread
 
 "
 " Signal Constants
