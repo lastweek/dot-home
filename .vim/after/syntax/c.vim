@@ -56,6 +56,7 @@ syn keyword	cType		atomic_t
 syn keyword	cType		cpumask_t
 syn keyword	cType		spinlock_t
 syn keyword	cType		mutex_t
+syn keyword	cType		pgd_t pud_t pmd_t pte_t
 
 "
 " Compiler Labels
