@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/lastweek/Github/LegoOS/arch/x86/kernel'
+let g:netrw_dirhist_2='/Users/lastweek/Github/LegoOS/managers/processor/pcache'
+let g:netrw_dirhist_3='/Users/lastweek/Github/dot-home/.vim'
+let g:netrw_dirhist_4='/'
+let g:netrw_dirhist_5='/Users/lastweek/Github/Linux/linux-4.9.32/security'
+let g:netrw_dirhist_6='/Users/lastweek/Github/Linux/linux-4.9.32'
+let g:netrw_dirhist_7='/Users/lastweek/Github/Linux'
+let g:netrw_dirhist_8='/Users/lastweek/Github/Linux/linux-4.9.32'

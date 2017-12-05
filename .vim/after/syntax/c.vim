@@ -25,6 +25,7 @@ syn keyword	cInclude	PCACHE_WARN_ON
 syn keyword	cInclude	PCACHE_WARN_ON_ONCE
 syn keyword	cInclude	PCACHE_BUG_ON
 syn keyword	cInclude	PCACHE_BUG_ON_PCM
+syn keyword	cInclude	PCACHE_BUG_ON_VICTIM
 
 syn keyword	cInclude	READ_ONCE
 syn keyword	cInclude	WRITE_ONCE
