@@ -148,6 +148,7 @@ syn keyword	cLabel		for_each_set_bit
 syn keyword	cLabel		for_each_clear_bit
 syn keyword	cLabel		list_for_each
 syn keyword	cLabel		list_for_each_entry
+syn keyword	cLabel		list_for_each_entry_safe
 
 syn keyword	cLabel		do_each_thread
 syn keyword	cLabel		for_each_thread
