@@ -23,7 +23,12 @@ set nu
 set mouse=a
 
 " No wrap search, stop seaching at the end of file.
-set nowrapscan
+" set nowrapscan
+
+" Remember the last position in a new open
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 
 map \p i(<Esc>Ea)<Esc>
 map \c i{<Esc>ea}<Esc>
