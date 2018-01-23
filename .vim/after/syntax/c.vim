@@ -156,6 +156,9 @@ syn keyword	cLabel		for_each_process
 syn keyword	cLabel		for_each_process_thread
 syn keyword	cLabel		while_each_thread
 
+syn keyword	cLabel		pcache_for_each_way_set
+syn keyword	cLabel		pcache_for_each_set
+
 "
 " Signal Constants
 "

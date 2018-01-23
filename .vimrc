@@ -20,7 +20,7 @@ set nu
 
 " Allow mouse in all modes
 " So when use vi inside tmux, mouse scrolling will work.
-set mouse=a
+" set mouse=a
 
 " No wrap search, stop seaching at the end of file.
 " set nowrapscan
