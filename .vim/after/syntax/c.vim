@@ -171,3 +171,9 @@ syn keyword	cConstant	SIGXFSZ
 syn keyword	cConstant	SIGVTALRM
 syn keyword	cConstant	SIGPROF
 syn keyword	cConstant	SIGPROF
+
+"
+" User level stuff
+"
+syn keyword	cLabel		__thread
+syn keyword	cInclude	assert
