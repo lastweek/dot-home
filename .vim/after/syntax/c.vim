@@ -160,6 +160,8 @@ syn keyword	cLabel		pcache_for_each_way_set
 syn keyword	cLabel		pcache_for_each_set
 syn keyword	cLabel		pcache_for_each_way
 
+syn keyword	cLabel		for_each_pci_dev
+
 "
 " Signal Constants
 "
