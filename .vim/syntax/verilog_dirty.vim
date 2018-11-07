@@ -38,14 +38,15 @@ syn keyword verilogStatement   supply0 supply1 table task time tran
 syn keyword verilogStatement   tranif0 tranif1 tri tri0 tri1 triand
 syn keyword verilogStatement   trior trireg unsigned use vectored wait
 syn keyword verilogStatement   wand weak0 weak1 wire wor xnor xor
-syn keyword verilogLabel       begin end fork join
 syn keyword verilogConditional if else case casex casez default endcase
 syn keyword verilogRepeat      forever repeat while for
 
 "
 " My own hacking
 "
-syn keyword verilogType		module endmodule
+syn keyword verilogInclude	begin end fork join
+syn keyword verilogType		module endmodule function endfunction
+syn keyword verilogType		input output wire reg 
 
 syn keyword verilogTodo contained TODO FIXME
 
@@ -103,7 +104,7 @@ syn sync minlines=50
 
 " The default highlighting.
 hi def link verilogCharacter       Character
-hi def link verilogConditional     Conditional
+hi def link verilogConditional     Label
 hi def link verilogRepeat          Repeat
 hi def link verilogString          String
 hi def link verilogTodo            Todo
@@ -112,12 +113,16 @@ hi def link verilogConstant        Constant
 hi def link verilogLabel           Label
 hi def link verilogNumber          Number
 hi def link verilogOperator        Special
-hi def link verilogStatement       Statement
 hi def link verilogGlobal          Define
 hi def link verilogDirective       SpecialComment
 hi def link verilogEscape		 Special
-hi def link verilogType			Type
 
+"
+" My hacking
+"
+hi def link verilogStatement		Statement
+hi def link verilogType			Type
+hi def link verilogInclude		Label
 
 let b:current_syntax = "verilog_dirty"
 
