@@ -9,7 +9,6 @@ if exists("b:did_ftplugin")
   finish
 endif
 
-
 au BufRead,BufNewFile *.v,*.vh,*.sv		set filetype=verilog_dirty
 
 " Behaves just like Verilog

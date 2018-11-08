@@ -44,9 +44,12 @@ syn keyword verilogRepeat      forever repeat while for
 "
 " My own hacking
 "
-syn keyword verilogInclude	begin end fork join
-syn keyword verilogType		module endmodule function endfunction
-syn keyword verilogType		input output wire reg 
+syn keyword verilogStatement	begin end fork join
+"syn keyword verilogType		module endmodule function endfunction
+"syn keyword verilogType		task endtask
+
+syn keyword verilogType		input output wire reg integer
+syn keyword verilogType		parameter time
 
 syn keyword verilogTodo contained TODO FIXME
 
