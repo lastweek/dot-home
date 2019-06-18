@@ -46,17 +46,17 @@ map mm :w<Enter> :make<Enter><Enter>
 " Auto-wrapping
 " Insert newline automatically
 "
-set textwidth=80
-set formatoptions+=t
+"set textwidth=80
+"set formatoptions+=t
+
+"
+" The vertical 81 deathline.
+"
+"set colorcolumn=81
+"highlight ColorColumn ctermbg=gray
 
 "
 " Highlight those overlength chars
 "
-highlight OverLength ctermbg=gray
-match OverLength /\%80v.\+/
-
-"
-" The vertical 80 deathline.
-"
-set colorcolumn=80
-highlight ColorColumn ctermbg=gray
+"highlight OverLength ctermbg=gray
+"match OverLength /\%81v.\+/
