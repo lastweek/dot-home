@@ -1,7 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/yizhoushan/Github/LegoOS/arch/x86/include'
-let g:netrw_dirhist_2='/Users/yizhoushan/Github/grpc/src/core/ext/transport/chttp2'
-let g:netrw_dirhist_3='/Users/yizhoushan/Github/netfpga/lib/verilog/core/io/mdio'
-let g:netrw_dirhist_4='/Users/yizhoushan/Github/netfpga/lib/verilog/core/io'
-let g:netrw_dirhist_5='/Users/yizhoushan/Github/FPGA/.git'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/yizhoushan/Github/Linux'
+let g:netrw_dirhist_2='/Users/yizhoushan/Github'
+let g:netrw_dirhist_3='/Users/yizhoushan/Github/Linux'
+let g:netrw_dirhist_4='/Users/yizhoushan/Github/Apps/Tensorflow/models'
