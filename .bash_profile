@@ -1,56 +1,41 @@
 #
-#	Prompt String
+# bash alias
 #
 
+# Customized PS1
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ git:(\1)/'
 }
-
 PS1="\[\033[01;32m\][\u@\h\[\033[00m\] \[\033[01;34m\]\W\[\033[01;32m\]]\[\033[00m\] \$ "
 PS1="\[\033[01;32m\][\u@\h\[\033[00m\] \[\033[01;34m\]\W\[\033[01;32m\]\$(parse_git_branch)]\[\033[00m\] \$ "
 
-#
-#	General Alias
-#
+# General
+export LC_COLLATE="C"
+alias ll="ls -al --group-directories-first"
 
-alias ll="ls -alhGF"
-alias kk="ls -alG"
-alias ls="ls -G"
 alias pwd="pwd -P"
 alias cd..="cd .."
 alias cdd="cd ../../"
 alias cddd="cd ../../../"
+alias tree="tree -C"
 alias gcc="gcc -fdiagnostics-color=always"
 
-#
-#	Git Abbr
-#
-
+# Git
 alias gits="git status"
-alias gitc="git commit -am \"up\""
+alias gitc="git commit -e"
 alias gita="git add"
 alias gitp="git push"
 
-#
-#	Sorry, my fault.
-#
-
+# VIM or NEOVIM
+alias vi="vim"
 alias vu="vi"
 alias vo="vi"
 alias ci="vi"
 alias co="vi"
 
-#
-#	Dedicated for my MBP
-#
-
+# Dirty
 alias ctags="/usr/local/bin/ctags"
 alias cdg="cd ~/Github"
-alias cdl="cd ~/Github/Linux"
-alias cds="cd ~/Github/Sandix"
-alias cdo="cd ~/OpenSource"
-alias gdb="ggdb"
 alias qi386="qemu-system-i386 -monitor stdio"
 alias xvi="open -a MacVim"
 alias sub="open -a Sublime\ Text\ 2"
-alias tree="tree -C"

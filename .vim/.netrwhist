@@ -1,6 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/yizhoushan/Github/Linux'
 let g:netrw_dirhist_2='/Users/yizhoushan/Github'
 let g:netrw_dirhist_3='/Users/yizhoushan/Github/Linux'
 let g:netrw_dirhist_4='/Users/yizhoushan/Github/Apps/Tensorflow/models'
+let g:netrw_dirhist_5='/Users/yizhoushan/Github/Linux/linux-AsyncXing-5.1.9/LICENSES/exceptions'
+let g:netrw_dirhist_6='/Users/yizhoushan/Github/Linux/linux-AsyncXing-5.1.9/LICENSES'
+let g:netrw_dirhist_7='/Users/yizhoushan/Github/Linux/linux-AsyncXing-5.1.9/LICENSES/preferred'
+let g:netrw_dirhist_8='/Users/yizhoushan/Github/Linux/linux-AsyncXing-5.1.9/LICENSES'
+let g:netrw_dirhist_9='/Users/yizhoushan/Github/Linux/linux-AsyncXing-5.1.9'
