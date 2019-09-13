@@ -34,8 +34,5 @@ alias ci="vi"
 alias co="vi"
 
 # Dirty
-alias ctags="/usr/local/bin/ctags"
 alias cdg="cd ~/Github"
 alias qi386="qemu-system-i386 -monitor stdio"
-alias xvi="open -a MacVim"
-alias sub="open -a Sublime\ Text\ 2"
