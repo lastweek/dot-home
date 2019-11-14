@@ -179,3 +179,9 @@ syn keyword	cConstant	SIGPROF
 "
 syn keyword	cLabel		__thread
 syn keyword	cInclude	assert
+
+"
+" FPGA Related Stuff
+"
+syn keyword	cInclude	HLS_BUG
+syn keyword	cInclude	FSM_NEXT
