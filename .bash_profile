@@ -24,7 +24,6 @@ alias gcc="gcc -fdiagnostics-color=always"
 alias gits="git status"
 alias gitc="git commit -e"
 alias gita="git add"
-alias gitp="git push"
 
 # VIM or NEOVIM
 alias vi="vim"
@@ -33,6 +32,5 @@ alias vo="vi"
 alias ci="vi"
 alias co="vi"
 
-# Dirty
-alias cdg="cd ~/Github"
-alias qi386="qemu-system-i386 -monitor stdio"
+# Do not use xterm-256color, it's just ugly.
+export TERM="screen-256color"

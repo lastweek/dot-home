@@ -1,3 +1,15 @@
+set nocompatible
+filetype off 
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'rust-lang/rust.vim'
+Plugin 'majutsushi/tagbar'
+call vundle#end()
+filetype plugin indent on
+
+let g:tagbar_left = 1
 let Tlist_Exit_OnlyWindow=1
 "let Tlist_Auto_Open=1 
 
@@ -33,7 +45,8 @@ endif
 map \p i(<Esc>Ea)<Esc>
 map \c i{<Esc>ea}<Esc>
 map \[ i[<Esc>ea]<Esc>
-map \t :Tlist<Enter>
+"map \t :Tlist<Enter>
+map \t :TagbarToggle<Enter>
 map \v :vnew 
 map \n :set nu<Enter>
 map \m :set nonu<Enter>
