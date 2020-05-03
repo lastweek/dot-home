@@ -55,7 +55,7 @@ map \q :q<Enter>
 map qq :q<Enter>
 map mm :w<Enter> :make<Enter><Enter>
 
-let $PAGER=''
+"let $PAGER=''
 
 "
 " Auto-wrapping

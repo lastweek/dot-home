@@ -35,9 +35,14 @@ alias co="vi"
 # Do not use xterm-256color, it's just ugly.
 export TERM="screen-256color"
 
-# "man" will use vim
-# https://vim.fandom.com/wiki/Using_vim_as_a_man-page_viewer_under_Unix
-export PAGER="/bin/sh -c \"unset PAGER;col -b -x | \
-    vim -R -c 'set ft=man nomod nolist' -c 'map q :q<CR>' \
-    -c 'map <SPACE> <C-D>' -c 'map b <C-U>' \
-    -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>' -\""
+if true; then
+	# "man" will use vim
+	# https://vim.fandom.com/wiki/Using_vim_as_a_man-page_viewer_under_Unix
+	export PAGER="/bin/sh -c \"unset PAGER;col -b -x | \
+	    vim -R -c 'set ft=man nomod nolist' -c 'map q :q<CR>' \
+	    -c 'map <SPACE> <C-D>' -c 'map b <C-U>' \
+	    -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>' -\""
+else
+	vman() { man $* | col -b | vim -c 'set ft=man nomod nolist' -; }    
+	alias man="vman"
+fi
