@@ -6,6 +6,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'preservim/nerdtree'
+Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on
 
@@ -32,21 +34,24 @@ set nu
 
 " Allow mouse in all modes
 " So when use vi inside tmux, mouse scrolling will work.
-" set mouse=a
+set mouse=a
 
 " No wrap search, stop seaching at the end of file.
 " set nowrapscan
 
 " Remember the last position in a new open
 if has("autocmd")
-  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+" Some shortcuts
 map \p i(<Esc>Ea)<Esc>
 map \c i{<Esc>ea}<Esc>
 map \[ i[<Esc>ea]<Esc>
+
 "map \t :Tlist<Enter>
 map \t :TagbarToggle<Enter>
+
 map \v :vnew 
 map \n :set nu<Enter>
 map \m :set nonu<Enter>
@@ -55,7 +60,10 @@ map \q :q<Enter>
 map qq :q<Enter>
 map mm :w<Enter> :make<Enter><Enter>
 
-"let $PAGER=''
+" GitGutter
+" Turn off signs by default
+let g:gitgutter_signs = 0
+map \g :GitGutterLineHighlightsToggle<Enter> :GitGutterSignsToggle<Enter>
 
 "
 " Auto-wrapping
@@ -75,3 +83,7 @@ map mm :w<Enter> :make<Enter><Enter>
 "
 "highlight OverLength ctermbg=gray
 "match OverLength /\%81v.\+/
+"
+
+"set termguicolors
+"set background=light
