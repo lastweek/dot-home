@@ -8,6 +8,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'preservim/nerdtree'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-airline/vim-airline'
 call vundle#end()
 filetype plugin indent on
 
@@ -59,6 +60,8 @@ map \/ i/**/<Esc>
 map \q :q<Enter>
 map qq :q<Enter>
 map mm :w<Enter> :make<Enter><Enter>
+
+map \f :NERDTreeToggle<CR>
 
 " GitGutter
 " Turn off signs by default
