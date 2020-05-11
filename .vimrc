@@ -12,6 +12,8 @@ Plugin 'vim-airline/vim-airline'
 call vundle#end()
 filetype plugin indent on
 
+let w:airline_disable_statusline = 1
+
 let g:tagbar_left = 1
 let Tlist_Exit_OnlyWindow=1
 "let Tlist_Auto_Open=1 
@@ -63,10 +65,27 @@ map mm :w<Enter> :make<Enter><Enter>
 
 map \f :NERDTreeToggle<CR>
 
+"
 " GitGutter
+"
+map \g :GitGutterLineHighlightsToggle<Enter> :GitGutterSignsToggle<Enter>
+
 " Turn off signs by default
 let g:gitgutter_signs = 0
-map \g :GitGutterLineHighlightsToggle<Enter> :GitGutterSignsToggle<Enter>
+
+" Color
+let g:gitgutter_override_sign_column_highlight = 0
+highlight clear SignColumn
+highlight GitGutterAdd ctermfg=green
+highlight GitGutterChange ctermfg=yellow
+highlight GitGutterDelete ctermfg=red
+
+highlight GitGutterAddLine ctermfg=green
+highlight GitGutterChangeLine ctermfg=yellow
+highlight GitGutterDeleteLine ctermfg=red
+"
+" End of GitGutter
+"
 
 "
 " Auto-wrapping
