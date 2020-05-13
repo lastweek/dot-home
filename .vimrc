@@ -87,6 +87,8 @@ highlight GitGutterDeleteLine ctermfg=red
 " End of GitGutter
 "
 
+set bg=light
+
 "
 " Auto-wrapping
 " Insert newline automatically
