@@ -35,6 +35,7 @@ alias co="vi"
 # Do not use xterm-256color, it's just ugly.
 export TERM="screen-256color"
 
+<<<<<<< HEAD
 # "man" will use vim
 # https://vim.fandom.com/wiki/Using_vim_as_a_man-page_viewer_under_Unix
 export PAGER="/bin/sh -c \"unset PAGER;col -b -x | \
