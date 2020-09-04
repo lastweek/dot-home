@@ -6,6 +6,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'derekwyatt/vim-scala'
 call vundle#end()
 filetype plugin indent on
 
@@ -75,3 +76,5 @@ let $PAGER=''
 "
 "highlight OverLength ctermbg=gray
 "match OverLength /\%81v.\+/
+
+autocmd BufNewFile,BufRead *.lc set syntax=haskell
