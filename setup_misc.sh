@@ -14,3 +14,12 @@ pip3 install bpytop --upgrade
 #
 # Cool GIT!
 # https://github.com/jonas/tig/blob/master/INSTALL.adoc
+
+
+#
+# BPF
+#
+# bcc and bpftrace
+#
+# https://github.com/iovisor/bcc
+# https://github.com/iovisor/bpftrace
