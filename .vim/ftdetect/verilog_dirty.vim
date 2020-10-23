@@ -5,11 +5,11 @@
 " Version: 1.0
 
 " Only do this when not done yet for this buffer
-if exists("b:did_ftplugin")
-  finish
-endif
+"if exists("b:did_ftplugin")
+"  finish
+"endif
 
 au BufRead,BufNewFile *.v,*.vh,*.sv		set filetype=verilog_dirty
 
 " Behaves just like Verilog
-runtime! ftplugin/verilog.vim
+runtime! ftplugin/verilog_dirty.vim

@@ -9,6 +9,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'preservim/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
+Plugin 'preservim/nerdcommenter'
 call vundle#end()
 filetype plugin indent on
 
@@ -63,7 +64,23 @@ map \q :q<Enter>
 map qq :q<Enter>
 map mm :w<Enter> :make<Enter><Enter>
 
+
+"
+" NERD Tree
+"
 map \f :NERDTreeToggle<CR>
+
+
+"
+" NERD Commenter
+"
+"
+let g:NERDSpaceDelims = 1 
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+"let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
 
 "
 " GitGutter
