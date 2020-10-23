@@ -6,6 +6,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'derekwyatt/vim-scala'
 Plugin 'preservim/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
@@ -124,7 +125,7 @@ set bg=light
 "
 "highlight OverLength ctermbg=gray
 "match OverLength /\%81v.\+/
-"
+
 
 "set termguicolors
 "set background=light

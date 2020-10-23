@@ -11,7 +11,12 @@ following command will return "syntax=verilog_dirty ":
 	:set syntax ?
 
 
-##ASM:
+## ASM:
 	syntax/gas.vim
 
 Not well maintained.
+
+## P4
+
+ftdetect/p4.vim
+syntax/p4.vim

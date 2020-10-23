@@ -116,7 +116,7 @@ syn keyword	cLabel		__cond_lock
 syn keyword	cLabel		__percpu
 syn keyword	cLabel		__pmem
 syn keyword	cLabel		__rcu
-syn keyword	cLabel		__pmem
+syn keyword	cLabel		__remote
 
 "
 " Data Structures
