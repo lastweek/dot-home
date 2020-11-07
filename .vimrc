@@ -11,6 +11,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'preservim/nerdcommenter'
+Plugin 'neoclide/coc.nvim'
 call vundle#end()
 filetype plugin indent on
 
@@ -80,7 +81,7 @@ let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
-"let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 
 
 "
