@@ -2,7 +2,8 @@
 set shortmess+=c
 
 " Always show signcolumns
-set signcolumn=yes
+" This will enable a column at left side, looks odd, do disable
+set signcolumn=no
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
