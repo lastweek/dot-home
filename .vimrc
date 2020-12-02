@@ -25,7 +25,7 @@ syntax on
 set ruler
 set showcmd
 set showmode
-set autoindent
+"set autoindent
 
 " Show the match ( { [
 set showmatch
@@ -35,6 +35,7 @@ set hlsearch
 
 " Always use tabstop 8 please.
 set tabstop=8
+set noexpandtab
 
 set nu
 
@@ -65,7 +66,6 @@ map \/ i/**/<Esc>
 map \q :q<Enter>
 map qq :q<Enter>
 map mm :w<Enter> :make<Enter><Enter>
-
 
 "
 " NERD Tree
