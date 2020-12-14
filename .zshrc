@@ -109,7 +109,7 @@ alias gita="git add"
 alias cdg="cd ~/Github"
 
 # VIM or NEOVIM
-alias vi="vim"
+alias vi="nvim"
 vman() { man $* | col -b | vim -c 'set ft=man nomod nolist' -; }    
 alias man="vman"
 #vman() { vim -MR +"set filetype=man" <(man $1); }
