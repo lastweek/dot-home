@@ -77,7 +77,7 @@
   m = merge
   o = checkout
   p = pull
-  r = remote
+  r = remote -v
   s = status
   w = whatchanged
 
