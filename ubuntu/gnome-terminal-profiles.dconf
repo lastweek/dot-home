@@ -1,39 +1,42 @@
 [/]
-list=['7abd1660-d2ac-4421-8cb4-33d9190c4308', 'eb9360bb-b055-441d-9f5d-b724e00b3a3c']
 default='7abd1660-d2ac-4421-8cb4-33d9190c4308'
-
-[:eb9360bb-b055-441d-9f5d-b724e00b3a3c]
-foreground-color='rgb(4,0,0)'
-visible-name='Frontend Delight White'
-palette=['rgb(36,37,38)', 'rgb(192,3,3)', 'rgb(12,167,23)', 'rgb(196,155,9)', 'rgb(36,124,216)', 'rgb(184,5,247)', 'rgb(60,161,166)', 'rgb(205,202,202)', 'rgb(95,172,109)', 'rgb(203,14,153)', 'rgb(12,167,23)', 'rgb(196,155,9)', 'rgb(51,147,202)', 'rgb(231,94,79)', 'rgb(79,188,230)', 'rgb(140,115,91)']
-bold-is-bright=false
-use-system-font=false
-highlight-colors-set=true
-use-theme-colors=false
-font='Courier 10 Pitch Bold 16'
-use-theme-transparency=false
-allow-bold=true
-bold-color-same-as-fg=true
-bold-color='#adadadadadad'
-background-color='rgb(226,226,226)'
-audible-bell=false
-highlight-background-color='#'
-highlight-foreground-color='#'
+list=['7abd1660-d2ac-4421-8cb4-33d9190c4308', 'eb9360bb-b055-441d-9f5d-b724e00b3a3c']
 
 [:7abd1660-d2ac-4421-8cb4-33d9190c4308]
-foreground-color='rgb(230,230,230)'
-visible-name='Frontend Delight Dark'
-palette=['rgb(36,37,38)', 'rgb(192,3,3)', 'rgb(12,167,23)', 'rgb(196,155,9)', 'rgb(36,124,216)', 'rgb(203,14,153)', 'rgb(60,161,166)', 'rgb(205,202,202)', 'rgb(95,172,109)', 'rgb(203,14,153)', 'rgb(116,236,76)', 'rgb(216,159,3)', 'rgb(51,147,202)', 'rgb(231,94,79)', 'rgb(79,188,230)', 'rgb(140,115,91)']
-bold-is-bright=false
-use-system-font=false
-highlight-colors-set=true
-use-theme-colors=false
-font='Courier 10 Pitch Bold 16'
-use-theme-transparency=false
 allow-bold=true
-bold-color-same-as-fg=true
-bold-color='#adadadadadad'
-background-color='rgb(45,46,46)'
 audible-bell=false
-highlight-background-color='#'
+background-color='rgb(38,37,37)'
+bold-color='#adadadadadad'
+bold-color-same-as-fg=true
+bold-is-bright=true
+cell-width-scale=1.0
+cjk-utf8-ambiguous-width='narrow'
+cursor-colors-set=false
+font='Courier Prime Light 20'
+foreground-color='rgb(230,230,230)'
+highlight-background-color='rgb(123,121,121)'
+highlight-colors-set=true
 highlight-foreground-color='#'
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(202,45,245)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='Frontend Delight Dark'
+
+[:eb9360bb-b055-441d-9f5d-b724e00b3a3c]
+allow-bold=true
+audible-bell=false
+background-color='rgb(215,206,165)'
+bold-color='#adadadadadad'
+bold-color-same-as-fg=true
+bold-is-bright=true
+font='Courier Prime Light 21'
+foreground-color='rgb(4,0,0)'
+highlight-background-color='#'
+highlight-colors-set=true
+highlight-foreground-color='#'
+palette=['rgb(36,37,38)', 'rgb(192,3,3)', 'rgb(12,167,23)', 'rgb(196,155,9)', 'rgb(36,124,216)', 'rgb(184,5,247)', 'rgb(60,161,166)', 'rgb(205,202,202)', 'rgb(95,172,109)', 'rgb(203,14,153)', 'rgb(12,167,23)', 'rgb(196,155,9)', 'rgb(51,147,202)', 'rgb(231,94,79)', 'rgb(79,188,230)', 'rgb(140,115,91)']
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='Frontend Delight White'
