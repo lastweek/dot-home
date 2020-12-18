@@ -1,19 +1,6 @@
 # dot-home
-General Scripts
 
-1. Copy VIM config
-	cp -r .vim/ ~/
-	cp -r .vimrc ~/
+Either run `all.sh` or run each `setup_xxx.sh` one by one.
 
-
-Setup vbundle:
-1. git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-2. vim +PluginInstall +qall
-
-Setup TMUX
-1. git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-2.
-   # type this in terminal if tmux is already running
-   $ tmux source ~/.tmux.conf
-3. Installing plugins
-   Press prefix + I (capital i, as in Install) to fetch the plugin.
+At Dec 2020, I switched to zsh. It took 2 steps to setup zsh.
+You should run `set_zsh_2.sh` after you have installed zsh.
