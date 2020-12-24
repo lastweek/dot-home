@@ -3,6 +3,8 @@
 	name = Yizhou Shan
 [core]
 	editor = vim
+#[core]
+#         pager = cat
 [credential]
 	helper = store
 [filter "lfs"]

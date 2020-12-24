@@ -1,4 +1,5 @@
 " Don't give |ins-completion-menu| messages.
+set nu
 set shortmess+=c
 
 " Always show signcolumns

@@ -1,5 +1,5 @@
-set nocompatible
-filetype off 
+"set nocompatible
+"filetype off 
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -37,7 +37,7 @@ set hlsearch
 set tabstop=8
 set noexpandtab
 
-set nu
+"set nu
 
 " Allow mouse in all modes
 " So when use vi inside tmux, mouse scrolling will work.
