@@ -108,15 +108,20 @@ alias gits="git status"
 alias gitc="git commit -e"
 alias gita="git add"
 alias cdg="cd ~/Github"
+alias cd..="cd ../"
+alias cdd="cd ../../"
+alias cddd="cd ../../../"
 
 # VIM or NEOVIM
 alias vi="nvim"
 vman() { man $* | col -b | vim -c 'set ft=man nomod nolist' -; }    
 alias man="vman"
-#vman() { vim -MR +"set filetype=man" <(man $1); }
 
 export XILINXD_LICENSE_FILE=2100@cselm2.ucsd.edu
-source /tools/Xilinx/Vivado/2020.1/settings64.sh
+#source /tools/Xilinx/Vitis/2020.2/settings64.sh
+#source /tools/Xilinx/Vitis_HLS/2020.2/settings64.sh
+source /tools/Xilinx/Vivado/2019.1/settings64.sh
+alias vivado_hls=/tools/Xilinx/Vivado/2019.1/bin/vivado_hls
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
@@ -124,5 +129,12 @@ export PATH="$HOME/gems/bin:/usr/local/cuda/bin:$PATH"
 
 export JAVA_HOME=/usr/lib/jvm/java-14-openjdk-amd64
 export PATH=$PATH:"$JAVA_HOME:/bin"
+export PATH=$PATH:"/tools/intelFPGA/20.1/modelsim_ase/bin"
 
 alias o=xdg-open
+
+setopt no_share_history
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/ys/.sdkman"
+[[ -s "/home/ys/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ys/.sdkman/bin/sdkman-init.sh"

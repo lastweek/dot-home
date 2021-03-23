@@ -187,6 +187,8 @@
 
   ### log ###
 
+  ls = log --stat
+
   # log with a text-based graphical representation of the commit history.
   lg = log --graph
 
@@ -211,7 +213,7 @@
   ## ls-files ##
 
   # ls-files - show information about files in the index and the working tree; like Unix "ls" command.
-  ls = ls-files
+  #ls = ls-files
 
   # ls-ignored -  list files that git has ignored.
   ls-ignored = ls-files --others --i --exclude-standard

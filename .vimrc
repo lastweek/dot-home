@@ -9,11 +9,10 @@ Plugin 'majutsushi/tagbar'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'preservim/nerdtree'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'vim-airline/vim-airline'
 Plugin 'preservim/nerdcommenter'
 Plugin 'neoclide/coc.nvim'
 call vundle#end()
-filetype plugin indent on
+"filetype plugin indent on
 
 let w:airline_disable_statusline = 1
 
@@ -25,7 +24,7 @@ syntax on
 set ruler
 set showcmd
 set showmode
-"set autoindent
+set autoindent
 
 " Show the match ( { [
 set showmatch
@@ -33,44 +32,59 @@ set showmatch
 " Highlight the searching pattern.
 set hlsearch
 
+" No wrap search, stop seaching at the end of file.
+"set nowrapscan
+
 " Always use tabstop 8 please.
 set tabstop=8
 set noexpandtab
+set shiftwidth=8
+set softtabstop=8
 
-"set nu
+set nu
 
 " Allow mouse in all modes
 " So when use vi inside tmux, mouse scrolling will work.
 set mouse=a
 
-" No wrap search, stop seaching at the end of file.
-" set nowrapscan
-
 " Remember the last position in a new open
 if has("autocmd")
-	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+"
+" https://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping
+"
+
 " Some shortcuts
-map \p i(<Esc>Ea)<Esc>
-map \c i{<Esc>ea}<Esc>
-map \[ i[<Esc>ea]<Esc>
+" noremap \p i(<Esc>Ea)<Esc>
+" noremap \c i{<Esc>ea}<Esc>
+" noremap \[ i[<Esc>ea]<Esc>
 
-"map \t :Tlist<Enter>
-map \t :TagbarToggle<Enter>
+noremap \l :TagbarToggle<Enter>
 
-map \v :vnew 
-map \n :set nu<Enter>
-map \m :set nonu<Enter>
-map \/ i/**/<Esc>
-map \q :q<Enter>
-map qq :q<Enter>
-map mm :w<Enter> :make<Enter><Enter>
-
-"
+noremap \t :tabnew 
+noremap \v :vnew 
+noremap \V :vsplit<CR>
+noremap \S :split<CR>
+noremap \n :set nu<CR>
+noremap \m :set nonu<CR>
+noremap \/ i/**/<Esc>
+noremap \q :q<Enter>
+noremap qq :q<Enter>
 " NERD Tree
+noremap \f :NERDTreeToggle<CR>
+
+noremap <C-Left> :tabprevious<CR>
+noremap <C-Right> :tabnext<CR>
+
 "
-map \f :NERDTreeToggle<CR>
+" Map to readline shotcuts
+"
+noremap <C-a> <ESC>^
+inoremap <C-a> <ESC>I
+noremap <C-e> <ESC>$
+inoremap <C-e> <ESC>A
 
 
 "
@@ -81,7 +95,7 @@ let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+"let g:NERDCustomDelimiters = { 'c': { 'left': '//','right': '' } }
 
 
 "

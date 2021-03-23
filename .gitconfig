@@ -3,8 +3,8 @@
 	name = Yizhou Shan
 [core]
 	editor = vim
-#[core]
-#         pager = cat
+; [core]
+;          pager = cat
 [credential]
 	helper = store
 [filter "lfs"]
@@ -20,3 +20,5 @@
 
 [include]
 	path = .gitalias
+[pager]
+	grep = cat
