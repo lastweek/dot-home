@@ -52,6 +52,7 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+
 "
 " https://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping
 "
@@ -144,3 +145,6 @@ set bg=light
 
 "set termguicolors
 "set background=light
+
+"autocmd BufRead * :CocDisable<CR>
+"autocmd FileType * CocDisable
