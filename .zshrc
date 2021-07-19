@@ -120,8 +120,8 @@ alias man="vman"
 export XILINXD_LICENSE_FILE=2100@cselm2.ucsd.edu
 #source /tools/Xilinx/Vitis/2020.2/settings64.sh
 #source /tools/Xilinx/Vitis_HLS/2020.2/settings64.sh
-source /tools/Xilinx/Vivado/2019.1/settings64.sh
-alias vivado_hls=/tools/Xilinx/Vivado/2019.1/bin/vivado_hls
+source /tools/Xilinx/Vivado/2020.2/settings64.sh
+#alias vivado_hls=/tools/Xilinx/Vivado/2019.1/bin/vivado_hls
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
@@ -130,6 +130,7 @@ export PATH="$HOME/gems/bin:/usr/local/cuda/bin:$PATH"
 export JAVA_HOME=/usr/lib/jvm/java-14-openjdk-amd64
 export PATH=$PATH:"$JAVA_HOME:/bin"
 export PATH=$PATH:"/tools/intelFPGA/20.1/modelsim_ase/bin"
+#export PATH=$PATH:"/home/ys/.local/bin"
 
 alias o=xdg-open
 

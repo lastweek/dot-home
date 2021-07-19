@@ -1,0 +1,1 @@
+/home/ys/Github/dot-home/oh-my-zsh/themes/robbyrussell.zsh-theme
