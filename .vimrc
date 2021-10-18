@@ -16,9 +16,10 @@ call vundle#end()
 
 let w:airline_disable_statusline = 1
 
+let g:Tlist_Ctags_Cmd='/opt/homebrew/Cellar/ctags/5.8_2/bin/ctags'
 let g:tagbar_left = 1
 let Tlist_Exit_OnlyWindow=1
-"let Tlist_Auto_Open=1 
+"let Tlist_Auto_Open=1
 
 syntax on
 set ruler
