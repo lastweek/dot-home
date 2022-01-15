@@ -134,6 +134,9 @@ export PATH=$PATH:"/tools/intelFPGA/20.1/modelsim_ase/bin"
 
 alias o=xdg-open
 
+alias psg='ps -ef | grep -i $1 '
+alias nsg='netstat -natp | grep -i $1 '
+
 setopt no_share_history
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
